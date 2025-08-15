@@ -29,6 +29,10 @@
   font-family: "Inter", sans-serif;
 }
 
+.descricao-agendamento span {
+  color: var(--content-secondary);
+}
+
 .text {
   display: flex;
   gap: 0.75rem;
