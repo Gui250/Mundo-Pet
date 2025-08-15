@@ -11,9 +11,25 @@
 .item {
   display: flex;
   justify-content: space-between;
+  background-color: #2e2c30;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  margin-top: 2rem;
 }
 
 .horario-agendamento {
   display: flex;
   align-items: center;
+}
+
+.horario-agendamento p {
+  color: var(--content-secondary);
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.horario-text h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: var(--color-primary);
 }
