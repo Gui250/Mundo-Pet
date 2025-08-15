@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #14151D;
+}
+
+:root {
+    --color-primary: #FFFFFF;
+    --content-secondary: #98959D;
+    --color-tertiary: #666666;
+    --content-brand: #9282FA;
+    --background-primary: #151515;
+    --background-secondary: #1e1e1e;
+    --background-tertiary: #23242C;
+    --background-brand: #9292FA;
+    --background-highlights: #BDB4FA;
+    --border-primary: #3e3c41;
+    --border-secondary: #86818C;
+    --border-brand: #9292fa;
+    --border-divisor: #353339;
+    --accent-primary: #027DF0;
+    --accent-blue-light: #16487A;
+    --accent-yellow: #F0DC02;
+    --accent-yellow-light: #756E1B;
+    --accent-orange: #f09102;
+    --accent-orange-light: #75501b;
+}
