@@ -1,0 +1,19 @@
+.horarios {
+  max-width: 44.4375rem;
+}
+
+.horario-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.horario-agendamento {
+  display: flex;
+  align-items: center;
+}

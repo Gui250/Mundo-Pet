@@ -1,7 +1,6 @@
-main { 
-    max-width: 54.4375rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 3.875rem auto;
+main {
+  max-width: 44.4375rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3.875rem auto;
 }
