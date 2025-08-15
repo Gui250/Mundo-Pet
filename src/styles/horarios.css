@@ -63,3 +63,7 @@
   font-size: 0.75rem;
   text-decoration: none;
 }
+
+.b-bottom {
+  border-bottom: 1px solid #353339;
+}
