@@ -1,0 +1,39 @@
+.dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #23242C;
+    padding-inline: 2.5rem;
+    margin-bottom: 1.75rem;
+    border-radius: 12px;
+    margin: auto;
+    position: absolute;
+    border: none;
+    top: 10%;
+    height: 44.75rem;
+    display: none;
+}
+
+.form-text-container {
+    margin-top: 2.3125rem;
+}
+
+.form-text-container p {
+    color: var(--content-secondary);
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+}
+
+.input-wrapper label { 
+   color: var(--color-primary);
+   font-family: "Inter", sans-serif;
+   font-size: 0.875rem;
+   font-weight: bold;
+}
+
+.dialog form .form-text-container legend {
+    font-size: 1.5rem;
+    font-family: "Inter tight", sans-serif;
+    color: var(--color-primary);
+    font-weight: bold;
+}

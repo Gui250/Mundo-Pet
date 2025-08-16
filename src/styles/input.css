@@ -1,0 +1,136 @@
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.8125rem;
+}
+
+.container { 
+    margin-bottom: 1rem;
+}
+
+.container label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form fieldset {
+    border: none;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-primary);
+    padding: 1rem 0.75rem;
+    gap: 0.5rem;
+    border-radius: 8px;
+}
+
+input[type="text"] {
+    border: none;
+    width: 100%;
+    background-color: #23242C;
+    color: var(--content-secondary);
+    font-size: 1rem;
+    padding: 0;
+}
+
+input[type="text"]::placeholder {
+    color: var(--content-secondary);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+
+textarea {
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    width: 100%;
+    background-color: #23242C;
+    color: var(--content-secondary);
+    font-size: 1rem;
+    padding: 0.75rem;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: var(--content-secondary);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.marcar-horario-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.input-data {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.75rem;
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+}
+
+input[type="time"] {
+    background-color: #23242C;
+    width: 100%;
+    border: none;
+    color: var(--content-secondary);
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+
+}
+
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.horario-data-container {
+    flex: 1;
+}
+
+.input-data-container {
+    flex: 1;
+}
+
+.input-data-container label {
+    display: block;
+}
+
+.input-horario {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: var(--content-brand);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: #050505;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    transition: 0.1s all ease-in;
+}
+
+button:hover {
+    background-color: #b0a5f8;
+}

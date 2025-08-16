@@ -113,10 +113,71 @@
             <a href="#">Remover agendamento</a>
           </div>
         </div>
-      </div>
+  </div>
       <footer>
         <button>Novo agendamento</button>
       </footer>
     </main>
+    <dialog class="dialog">
+
+      <form> 
+        <fieldset> 
+          <div class="form-text-container">
+            <legend>Agende um Atendimento</legend>
+            <p>Preencha os dados do cliente para realizar o agendamento:</p>
+          </div>
+          <div class="input-wrapper">
+            <div class="container">
+              <label>Nome do tutor</label>
+              <div class="input-container">
+                <img src="./assets/User--Streamline-Solar.svg" alt="user" />
+                <input type="text" placeholder="Helena Souza" />
+              </div>
+            </div>
+            <div class="container">
+              <label>Nome do pet</label>
+              <div class="input-container">
+                <img src="./assets/Pet-Paw--Streamline-Core.svg" alt="pet" />
+                <input type="text" placeholder="Cheddar" />
+              </div>
+            </div>
+            <div class="container">
+              <label>Telefone</label>
+              <div class="input-container">
+                <img src="./assets/Phone--Streamline-Solar.svg" alt="phone" />
+                <input type="text" placeholder="(00) 0 0000-0000" />
+              </div>
+            </div>
+            <div class="container">
+              <label>Descrição do serviço</label>
+              <div class="textarea-container">
+                <textarea cols="5" rows="5" placeholder="Banho e tosa"></textarea>
+              </div>
+              <div class="marcar-horario-container">
+                <div class="input-data-container">
+                  <label>Data</label>
+                  <div class="input-data">
+                    <img src="./assets/Calendar Minimalistic.svg" alt="calendar" />
+                    <input type="date" class="date-input" value="2024-01-10" />
+                    <img src="./assets/Icon.svg" alt="arrow" />
+                  </div>
+                </div>
+                <div class="horario-data-container">
+                  <label>Hora</label>
+                  <div class="input-horario">
+                    <img src="./assets/Clock-Circle--Streamline-Solar.svg" alt="clock" />
+                    <input type="time" class="time-input" value="12:00" />
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="button-container">
+          <button>Agendar</button>
+        </div>
+      </form>
+    </dialog>
   </body>
 </html>

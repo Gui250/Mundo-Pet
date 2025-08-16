@@ -1,3 +1,6 @@
+
+
+
 .horario-text-container {
   display: flex;
   align-items: center;
@@ -7,6 +10,7 @@
   width: 100%;
   padding: 0.75rem 1.25rem;
 }
+
 
 .item {
   display: flex;
