@@ -43,44 +43,42 @@ function filtro(e) {
   console.log(horarios);
 
   horarios.filter((item) => {
-    if(item.horario >= "09:00" && item.horario <= "12:00") {
+    if (item.horario >= "09:00" && item.horario <= "12:00") {
       const div = document.createElement("div");
       div.classList.add("descricao-agendamento");
       div.innerHTML = `
       <p>${item.horario}</p>
-      <p>${item.tutor}<span>/ ${item.tutor}</span></p>
+      <p>${item.pet}<span>/ ${item.tutor}</span></p>
       <p><span>${item.descricao}</span></p>
       <a href="#">Remover Agendamento</a>
-      `
+      `;
       morning.appendChild(div);
     }
 
-    if(item.horario >= "13:00" && item.horario <= "18:00" ) {
+    if (item.horario >= "13:00" && item.horario <= "18:00") {
       const div = document.createElement("div");
       div.classList.add("descricao-agendamento");
       div.innerHTML = `
       <p>${item.horario}</p>
-      <p>${item.tutor}<span>/ ${item.tutor}</span></p>
+      <p>${item.pet}<span>/ ${item.tutor}</span></p>
       <p><span>${item.descricao}</span></p>
       <a href="#">Remover Agendamento</a>
-      `
+      `;
       afternoon.appendChild(div);
-
     }
 
-    if(item.horario >= "19:00" && item.horario <= "23:00" ) {
+    if (item.horario >= "19:00" && item.horario <= "23:00") {
       const div = document.createElement("div");
       div.classList.add("descricao-agendamento");
       div.innerHTML = `
       <p>${item.horario}</p>
-      <p>${item.tutor}<span>/ ${item.tutor}</span></p>
+      <p>${item.pet}<span>/ ${item.tutor}</span></p>
       <p><span>${item.descricao}</span></p>
       <a href="#">Remover Agendamento</a>
-      `
+      `;
       night.appendChild(div);
     }
-
-  })
+  });
 }
 
 agendarBtn.addEventListener("click", filtro);
