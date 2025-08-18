@@ -1,38 +1,39 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #14151D;
+  background-color: #14151d;
 }
 
 :root {
-    --color-primary: #FFFFFF;
-    --content-secondary: #98959D;
-    --color-tertiary: #666666;
-    --content-brand: #9282FA;
-    --background-primary: #151515;
-    --background-secondary: #1e1e1e;
-    --background-tertiary: #23242C;
-    --background-brand: #9292FA;
-    --background-highlights: #BDB4FA;
-    --border-primary: #3e3c41;
-    --border-secondary: #86818C;
-    --border-brand: #9292fa;
-    --border-divisor: #353339;
-    --accent-primary: #027DF0;
-    --accent-blue-light: #16487A;
-    --accent-yellow: #F0DC02;
-    --accent-yellow-light: #756E1B;
-    --accent-orange: #f09102;
-    --accent-orange-light: #75501b;
+  --color-primary: #ffffff;
+  --content-secondary: #98959d;
+  --color-tertiary: #666666;
+  --content-brand: #9282fa;
+  --background-primary: #151515;
+  --background-secondary: #1e1e1e;
+  --background-tertiary: #23242c;
+  --background-brand: #9292fa;
+  --background-highlights: #bdb4fa;
+  --border-primary: #3e3c41;
+  --border-secondary: #86818c;
+  --border-brand: #9292fa;
+  --border-divisor: #353339;
+  --accent-primary: #027df0;
+  --accent-blue-light: #16487a;
+  --accent-yellow: #f0dc02;
+  --accent-yellow-light: #756e1b;
+  --accent-orange: #f09102;
+  --accent-orange-light: #75501b;
 }
 
-@media(max-width: 640px) {
-  main {
-    padding: 0.75rem 1.25rem;
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+    height: 100vh;
   }
   .agenda {
     display: flex;
@@ -41,9 +42,32 @@ body {
     margin: 0;
     align-items: center;
     gap: 1rem;
+    padding: 0.75rem 1.25rem;
   }
 
   .calendar {
     align-self: flex-start;
+  }
+
+  .descricao-agendamento {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  footer {
+    display: flex;
+    width: 100%;
+    background-color: #23242c;
+    padding: 1.125rem 5.375rem;
+  }
+
+  footer button {
+    margin: auto;
+  }
+
+  .agendamentos {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 3.5rem;
   }
 }

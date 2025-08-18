@@ -32,26 +32,29 @@
           </div>
         </div>
       </div>
-      <div class="horarios">
-        <div id="morning" class="item">
-          <div class="horario-text-container">
-            <div class="text">
-              <img src="./assets/morning.svg" alt="morning" />
-              <h2>Manhã</h2>
+      <div class="agendamentos">
+        <div class="horarios">
+          <div id="morning" class="item">
+            <div class="horario-text-container">
+              <div class="text">
+                <img src="./assets/morning.svg" alt="morning" />
+                <h2>Manhã</h2>
+              </div>
+
+              <div class="horario-agendamento">
+                <p>09h-12h</p>
+              </div>
             </div>
 
-            <div class="horario-agendamento">
-              <p>09h-12h</p>
+            <div
+              id="descricao-agendamento-morning"
+              class="descricao-agendamento"
+            >
+              <p>09:00</p>
+              <p>Thor<span>/ Fernanda Costa</span></p>
+              <p><span>Vacinação</span></p>
+              <a href="#">Remover Agendamento</a>
             </div>
-          </div>
-
-          <div id="descricao-agendamento-morning" class="descricao-agendamento">
-            <p>09:00</p>
-            <p>Thor<span>/ Fernanda Costa</span></p>
-            <p><span>Vacinação</span></p>
-            <a href="#">Remover Agendamento</a>
-            
-          </div>
           </div>
         </div>
         <div id="afternoon" class="item">
@@ -115,15 +118,14 @@
             <a href="#">Remover agendamento</a>
           </div>
         </div>
-  </div>
+      </div>
       <footer>
         <button id="novo-agendamento">Novo agendamento</button>
       </footer>
     </main>
     <dialog id="dialog" class="dialog">
-
-      <form> 
-        <fieldset> 
+      <form>
+        <fieldset>
           <div class="form-text-container">
             <legend>Agende um Atendimento</legend>
             <p>Preencha os dados do cliente para realizar o agendamento:</p>
@@ -141,39 +143,60 @@
               <div class="input-container">
                 <img src="./assets/Pet-Paw--Streamline-Core.svg" alt="pet" />
                 <input id="nomePet" type="text" placeholder="Cheddar" />
-
               </div>
             </div>
             <div class="container">
               <label>Telefone</label>
               <div class="input-container">
                 <img src="./assets/Phone--Streamline-Solar.svg" alt="phone" />
-                <input id="telefone" type="text" placeholder="(00) 0 0000-0000" />
-
+                <input
+                  id="telefone"
+                  type="text"
+                  placeholder="(00) 0 0000-0000"
+                />
               </div>
             </div>
             <div class="container">
               <label>Descrição do serviço</label>
               <div class="textarea-container">
-                <textarea id="descricaoServico" cols="5" rows="5" placeholder="Banho e tosa"></textarea>
-
+                <textarea
+                  id="descricaoServico"
+                  cols="5"
+                  rows="5"
+                  placeholder="Banho e tosa"
+                ></textarea>
               </div>
               <div class="marcar-horario-container">
                 <div class="input-data-container">
                   <label>Data</label>
                   <div class="input-data">
-                    <img src="./assets/Calendar Minimalistic.svg" alt="calendar" />
-                    <input id="data" type="date" class="date-input" value="2024-01-10" />
+                    <img
+                      src="./assets/Calendar Minimalistic.svg"
+                      alt="calendar"
+                    />
+                    <input
+                      id="data"
+                      type="date"
+                      class="date-input"
+                      value="2024-01-10"
+                    />
                     <img src="./assets/Icon.svg" alt="arrow" />
                   </div>
                 </div>
                 <div class="horario-data-container">
                   <label>Hora</label>
                   <div class="input-horario">
-                    <img src="./assets/Clock-Circle--Streamline-Solar.svg" alt="clock" />
-                    <input id="horario" type="time" class="time-input" value="12:00" />
+                    <img
+                      src="./assets/Clock-Circle--Streamline-Solar.svg"
+                      alt="clock"
+                    />
+                    <input
+                      id="horario"
+                      type="time"
+                      class="time-input"
+                      value="12:00"
+                    />
                   </div>
-
                 </div>
               </div>
             </div>
