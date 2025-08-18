@@ -1,5 +1,7 @@
 const nomeTutor = document.getElementById("nomeTutor");
 const morning = document.getElementById("morning");
+const afternoon = document.getElementById("afternoon");
+const night = document.getElementById("night");
 const nomePet = document.getElementById("nomePet");
 const telefone = document.getElementById("telefone");
 const descricaoServico = document.getElementById("descricaoServico");
@@ -51,6 +53,31 @@ function filtro(e) {
       <a href="#">Remover Agendamento</a>
       `
       morning.appendChild(div);
+    }
+
+    if(item.horario >= "13:00" && item.horario <= "18:00" ) {
+      const div = document.createElement("div");
+      div.classList.add("descricao-agendamento");
+      div.innerHTML = `
+      <p>${item.horario}</p>
+      <p>${item.tutor}<span>/ ${item.tutor}</span></p>
+      <p><span>${item.descricao}</span></p>
+      <a href="#">Remover Agendamento</a>
+      `
+      afternoon.appendChild(div);
+
+    }
+
+    if(item.horario >= "19:00" && item.horario <= "23:00" ) {
+      const div = document.createElement("div");
+      div.classList.add("descricao-agendamento");
+      div.innerHTML = `
+      <p>${item.horario}</p>
+      <p>${item.tutor}<span>/ ${item.tutor}</span></p>
+      <p><span>${item.descricao}</span></p>
+      <a href="#">Remover Agendamento</a>
+      `
+      night.appendChild(div);
     }
 
   })
